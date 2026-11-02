@@ -42,3 +42,9 @@ Bố cục tham khảo từ website Deutsch của chủ tài khoản; nội dung
 ## Ví dụ trong từng ô từ
 
 Mỗi ô từ trong mindmap có từ, IPA, nghĩa, câu ví dụ tiếng Anh và bản dịch tiếng Việt ngay bên dưới. Từ đang học được in đậm trong ví dụ; nhấn từng từ hoặc nút ▶ để nghe. Có 163 ví dụ theo đúng dạng từ, bao phủ mọi ô có từ trong 15 chủ đề; ô — được giữ rõ khi không có dạng thông dụng. Trên điện thoại, ba ô của cùng một nhóm được xếp dọc để dễ đọc. Phần ví dụ nhóm từ riêng đã được gộp vào mindmap, tránh lặp lại nội dung.
+
+## Nội dung song ngữ
+
+Toàn bộ 90 thẻ từ có `exampleVi` (dịch câu ví dụ) và `usageVi` (nghĩa cụm kết hợp). Cả mặt sau thẻ ôn và danh mục collocations đều hiển thị hai phần này. 12 thẻ cấu trúc có bản dịch câu; 15 đoạn mẫu và đề viết theo chủ đề có bản dịch đầy đủ. Nội dung mới cần điền đầy đủ các trường tiếng Việt tương ứng trước khi xuất bản.
+
+Phần đọc chờ 180 ms khi bắt đầu hoặc 240 ms sau lượt đọc trước, đồng thời chờ việc hủy/khởi tạo giọng hoàn tất trong giới hạn ngắn. Khi nhấn liên tục, chỉ yêu cầu mới nhất được đọc; nút Dừng hủy cả yêu cầu đang chờ. Văn bản gửi tới giọng đọc giữ nguyên từ đầu tiên. Các điều khiển này đã được kiểm tra bằng trình duyệt và API giọng đọc mô phỏng; chất lượng âm thanh thực tế vẫn phụ thuộc giọng đọc và thiết bị.

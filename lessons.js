@@ -301,7 +301,9 @@ window.LESSONS = [
           }
         }
       }
-    ]
+    ],
+    "paragraphVi": "Mặc dù khóa học trực tuyến giúp giáo dục dễ tiếp cận hơn, chúng không thể thay thế hoàn toàn việc giảng dạy trên lớp. Học sinh thiếu tính tự giác có thể gặp khó khăn khi theo học mà không được phản hồi thường xuyên. Vì vậy, trường học nên kết hợp tài nguyên số với sự hỗ trợ trực tiếp từ giáo viên có chuyên môn.",
+    "promptVi": "Học trực tuyến có nên thay thế lớp học truyền thống không? Viết một đoạn có một ý nhượng bộ và một ví dụ cụ thể."
   },
   {
     "topic": "Environment",
@@ -388,7 +390,9 @@ window.LESSONS = [
         "note": "Nhấn mạnh chính sách cần được hỗ trợ; “so that” tiếp theo nêu mục đích."
       }
     ],
-    "prompt": "How can governments encourage sustainable transport without placing an unfair burden on low-income households?"
+    "prompt": "How can governments encourage sustainable transport without placing an unfair burden on low-income households?",
+    "paragraphVi": "Các thành phố có thể giảm ô nhiễm bằng cách làm cho giao thông công cộng đáng tin cậy hơn. Nếu xe buýt chạy thường xuyên, người đi làm có thể bớt phụ thuộc vào ô tô cá nhân. Tuy nhiên, các chính sách này cần được hỗ trợ bằng giá vé vừa túi tiền để người thu nhập thấp có thể hưởng lợi.",
+    "promptVi": "Chính phủ có thể khuyến khích giao thông bền vững như thế nào mà không đặt gánh nặng bất công lên hộ gia đình thu nhập thấp?"
   },
   {
     "topic": "Technology",
@@ -476,7 +480,9 @@ window.LESSONS = [
         "note": "Whose jobs = công việc của những người đó, không dùng who’s (who is)."
       }
     ],
-    "prompt": "Does automation create more opportunities than problems for workers? Develop one conditional argument."
+    "prompt": "Does automation create more opportunities than problems for workers? Develop one conditional argument.",
+    "paragraphVi": "Tự động hóa có thể cải thiện năng suất, nhưng cũng có thể thay đổi kỹ năng mà nhà tuyển dụng yêu cầu. Thay vì coi công nghệ là mối đe dọa, chính phủ nên đầu tư vào đào tạo giúp người lao động thích ứng. Sự hỗ trợ đó đặc biệt quan trọng với người có công việc mang tính lặp lại.",
+    "promptVi": "Tự động hóa tạo nhiều cơ hội hơn hay nhiều vấn đề hơn cho người lao động? Triển khai một lập luận có điều kiện."
   },
   {
     "topic": "Work",
@@ -565,7 +571,9 @@ window.LESSONS = [
         "note": "Chủ thể ngầm của allowing cần hợp lý với mệnh đề trước; không viết “allow staff manage”."
       }
     ],
-    "prompt": "Some employees prefer flexible hours to a higher salary. Explain when this preference might be reasonable."
+    "prompt": "Some employees prefer flexible hours to a higher salary. Explain when this preference might be reasonable.",
+    "paragraphVi": "Giờ làm linh hoạt có thể cải thiện sự hài lòng trong công việc bằng cách giúp nhân viên kiểm soát lịch làm việc tốt hơn. Điều này không nhất thiết có nghĩa là mọi vị trí đều nên làm từ xa. Người sử dụng lao động cần cách bố trí vừa duy trì năng suất vừa cho phép nhân viên chu toàn trách nhiệm gia đình.",
+    "promptVi": "Một số nhân viên thích giờ làm linh hoạt hơn là lương cao hơn. Hãy giải thích khi nào lựa chọn này có thể hợp lý."
   },
   {
     "topic": "Cities",
@@ -652,7 +660,9 @@ window.LESSONS = [
         "note": "Where = in which ở đây; không dùng where cho người hoặc một quan điểm trừu tượng không chỉ nơi."
       }
     ],
-    "prompt": "What should cities prioritise when planning new residential areas? Give reasons and a practical example."
+    "prompt": "What should cities prioritise when planning new residential areas? Give reasons and a practical example.",
+    "paragraphVi": "Khi thành phố mở rộng, nhà ở thường trở nên khó chi trả hơn đối với người lao động làm các công việc thiết yếu. Xây nhà gần các tuyến giao thông đáng tin cậy có thể giảm cả thời gian đi làm lẫn sức ép lên khu trung tâm. Tuy vậy, khu phát triển mới cần không gian công cộng để cư dân gặp gỡ và xây dựng sự gắn kết cộng đồng.",
+    "promptVi": "Thành phố nên ưu tiên điều gì khi quy hoạch khu dân cư mới? Đưa ra lý do và một ví dụ thực tế."
   },
   {
     "topic": "Health",
@@ -739,7 +749,9 @@ window.LESSONS = [
         "note": "Unaffordable là bổ ngữ chỉ trạng thái của food, không dùng trạng từ unaffordably ở vị trí này."
       }
     ],
-    "prompt": "Is health education enough to improve eating habits? Explain one limitation and propose a response."
+    "prompt": "Is health education enough to improve eating habits? Explain one limitation and propose a response.",
+    "paragraphVi": "Cung cấp thông tin dinh dưỡng rõ ràng có thể giúp người tiêu dùng lựa chọn dựa trên hiểu biết. Tuy nhiên, chỉ riêng thông tin có thể có giá trị hạn chế nếu thực phẩm lành mạnh vẫn quá đắt. Vì vậy, chính sách y tế công cộng nên giải quyết cả kiến thức lẫn các rào cản thực tế mà mọi người gặp phải.",
+    "promptVi": "Giáo dục sức khỏe có đủ để cải thiện thói quen ăn uống không? Giải thích một hạn chế và đề xuất cách giải quyết."
   },
   {
     "topic": "Advertising",
@@ -826,7 +838,9 @@ window.LESSONS = [
         "note": "All advertising chỉ toàn bộ hoạt động quảng cáo; advertisement là một mẩu quảng cáo đếm được."
       }
     ],
-    "prompt": "Should advertising aimed at children be restricted? Present a balanced argument with a clear position."
+    "prompt": "Should advertising aimed at children be restricted? Present a balanced argument with a clear position.",
+    "paragraphVi": "Quảng cáo có thể giúp người tiêu dùng so sánh sản phẩm, nhưng thông điệp thuyết phục cũng có thể khuyến khích mua hàng bốc đồng. Trẻ em đặc biệt dễ bị tác động vì có thể chưa nhận ra mục đích thương mại. Vì vậy, quy định hạn chế tuyên bố gây hiểu nhầm có thể bảo vệ người xem nhỏ tuổi mà không cần cấm mọi hình thức quảng cáo.",
+    "promptVi": "Có nên hạn chế quảng cáo hướng tới trẻ em không? Trình bày lập luận cân bằng và nêu rõ lập trường."
   },
   {
     "topic": "Crime",
@@ -914,7 +928,9 @@ window.LESSONS = [
         "note": "To ở đây là giới từ, không phải dấu hiệu bắt buộc cho động từ nguyên thể."
       }
     ],
-    "prompt": "How can education in prisons help reduce reoffending? Explain a mechanism and acknowledge one limitation."
+    "prompt": "How can education in prisons help reduce reoffending? Explain a mechanism and acknowledge one limitation.",
+    "paragraphVi": "Án tù có thể cần thiết đối với hành vi phạm tội nghiêm trọng, nhưng chỉ hình phạt thôi không giải quyết được mọi nguyên nhân tái phạm. Người phạm tội được đào tạo nghề có thể dễ kiếm việc hơn sau khi ra tù. Vì vậy, cải tạo nên là một phần trong cách tiếp cận rộng hơn đối với an toàn công cộng.",
+    "promptVi": "Giáo dục trong nhà tù có thể giúp giảm tái phạm như thế nào? Giải thích một cơ chế và thừa nhận một hạn chế."
   },
   {
     "topic": "Colour",
@@ -1002,7 +1018,9 @@ window.LESSONS = [
         "note": "Mệnh đề nói một giải pháp chung; không diễn giải như bằng chứng từ thí nghiệm."
       }
     ],
-    "prompt": "How can public information be designed so that more people can understand it?"
+    "prompt": "How can public information be designed so that more people can understand it?",
+    "paragraphVi": "Màu sắc có thể giúp thông tin công cộng dễ theo dõi hơn, với điều kiện nhà thiết kế cân nhắc nhiều nhóm người dùng. Một cảnh báo chỉ dựa vào màu đỏ có thể khó hiểu với một số người. Kết hợp màu sắc với chữ rõ ràng và hình dạng có nét đặc trưng có thể giúp cùng thông điệp đó dễ tiếp cận hơn.",
+    "promptVi": "Có thể thiết kế thông tin công cộng như thế nào để nhiều người hiểu được hơn?"
   },
   {
     "topic": "Arts",
@@ -1089,7 +1107,9 @@ window.LESSONS = [
         "note": "Ý nói một lựa chọn có thể ít tốn kém hơn, không khẳng định mọi triển lãm đều rẻ."
       }
     ],
-    "prompt": "Should governments fund local arts programmes? Discuss a benefit and a practical limit."
+    "prompt": "Should governments fund local arts programmes? Discuss a benefit and a practical limit.",
+    "paragraphVi": "Kinh phí công có thể giúp những người vốn không đủ khả năng chi trả được tham gia hoạt động văn hóa. Tuy nhiên, tài trợ nên được phân bổ minh bạch để nhiều cộng đồng có thể hưởng lợi. Ví dụ, hỗ trợ triển lãm địa phương có thể tạo cơ hội biểu đạt nghệ thuật mà không cần xây công trình mới tốn kém.",
+    "promptVi": "Chính phủ có nên tài trợ chương trình nghệ thuật địa phương không? Thảo luận một lợi ích và một giới hạn thực tế."
   },
   {
     "topic": "History",
@@ -1177,7 +1197,9 @@ window.LESSONS = [
         "note": "That là chủ ngữ của balance và refers to decisions số nhiều."
       }
     ],
-    "prompt": "How should cities balance the preservation of historic sites with the need for new housing?"
+    "prompt": "How should cities balance the preservation of historic sites with the need for new housing?",
+    "paragraphVi": "Di tích lịch sử có thể cung cấp bằng chứng về cách các xã hội trước đây sinh sống. Nếu những nơi này bị tổn hại bởi quá trình phát triển thiếu kiểm soát, các thế hệ tương lai có thể mất cơ hội tiếp cận bằng chứng đó. Bảo tồn không có nghĩa là ngăn mọi thay đổi; thay vào đó, cần các quyết định cân bằng giữa việc cho công chúng tiếp cận và việc bảo vệ.",
+    "promptVi": "Thành phố nên cân bằng việc bảo tồn di tích lịch sử với nhu cầu nhà ở mới như thế nào?"
   },
   {
     "topic": "Space",
@@ -1264,7 +1286,9 @@ window.LESSONS = [
         "note": "Đưa vào so sánh ưu tiên, không tự kết luận phải bỏ toàn bộ kinh phí nghiên cứu."
       }
     ],
-    "prompt": "Should governments spend money on space exploration when there are urgent problems on Earth?"
+    "prompt": "Should governments spend money on space exploration when there are urgent problems on Earth?",
+    "paragraphVi": "Nghiên cứu vũ trụ có thể mở rộng kiến thức khoa học, mặc dù không phải lúc nào cũng dự đoán được lợi ích trước mắt. Các quốc gia có thể giảm chi phí bằng cách hợp tác với nhau. Tuy nhiên, quyết định tài trợ vẫn cần minh bạch, vì đầu tư vào thám hiểm phải được cân nhắc cùng các nhu cầu cấp thiết trên Trái Đất.",
+    "promptVi": "Chính phủ có nên chi tiền cho thám hiểm vũ trụ khi trên Trái Đất còn những vấn đề cấp thiết không?"
   },
   {
     "topic": "Animals",
@@ -1352,7 +1376,9 @@ window.LESSONS = [
       }
     ],
     "prompt": "Can zoos be justified as a way to protect endangered species? Discuss a potential benefit and a limitation.",
-    "source": "Chủ đề phát triển từ mục Animal rights trong Ideas for IELTS topics; nghĩa Việt, ví dụ và lập luận do website biên soạn. Không phải tóm tắt tin mới."
+    "source": "Chủ đề phát triển từ mục Animal rights trong Ideas for IELTS topics; nghĩa Việt, ví dụ và lập luận do website biên soạn. Không phải tóm tắt tin mới.",
+    "paragraphVi": "Vườn thú có thể góp phần bảo vệ các loài có nguy cơ tuyệt chủng, với điều kiện phúc lợi động vật được ưu tiên. Tuy nhiên, nhân giống trong điều kiện nuôi nhốt không loại bỏ nhu cầu bảo vệ môi trường sống tự nhiên. Vì vậy, chiến lược bảo tồn có sức thuyết phục cần giải thích các hoạt động này hỗ trợ sự tồn tại dài hạn của quần thể hoang dã như thế nào.",
+    "promptVi": "Có thể biện minh cho vườn thú như một cách bảo vệ loài có nguy cơ tuyệt chủng không? Thảo luận một lợi ích tiềm năng và một hạn chế."
   },
   {
     "topic": "Biodiversity",
@@ -1440,7 +1466,9 @@ window.LESSONS = [
       }
     ],
     "prompt": "Should environmental policy focus on protecting individual species or restoring entire ecosystems? Explain your position.",
-    "source": "Mở rộng từ Unit 7 Our relationship with nature và word list PDF tr. 132, cùng chủ đề môi trường trong tài liệu ý tưởng. Ví dụ tự biên soạn; chưa gắn dữ kiện tin mới."
+    "source": "Mở rộng từ Unit 7 Our relationship with nature và word list PDF tr. 132, cùng chủ đề môi trường trong tài liệu ý tưởng. Ví dụ tự biên soạn; chưa gắn dữ kiện tin mới.",
+    "paragraphVi": "Phục hồi môi trường sống tự nhiên có thể mang lại lợi ích cho động vật hoang dã cũng như cộng đồng lân cận. Tuy vậy, chỉ trồng cây không phải lúc nào cũng đủ để phục hồi một hệ sinh thái hoạt động tốt. Các dự án nên được thiết kế theo điều kiện địa phương và theo dõi lâu dài để tác động được đánh giá, thay vì chỉ được mặc định là có lợi.",
+    "promptVi": "Chính sách môi trường nên tập trung bảo vệ từng loài riêng lẻ hay phục hồi toàn bộ hệ sinh thái? Giải thích quan điểm của bạn."
   },
   {
     "topic": "Civic",
@@ -1528,6 +1556,8 @@ window.LESSONS = [
       }
     ],
     "prompt": "Some people argue that public demonstrations are an effective way for young people to influence decisions. Others favour participation through formal institutions. Discuss both views and give your opinion.",
-    "source": "Chủ đề bổ sung do website biên soạn theo yêu cầu của bạn. Chưa có bài báo hiện tại được xác minh; đoạn mẫu không mô tả một sự kiện cụ thể."
+    "source": "Chủ đề bổ sung do website biên soạn theo yêu cầu của bạn. Chưa có bài báo hiện tại được xác minh; đoạn mẫu không mô tả một sự kiện cụ thể.",
+    "paragraphVi": "Người trẻ có thể dùng biểu tình công khai để bày tỏ những mối quan tâm mà họ cho rằng các thiết chế chính trị đã bỏ qua. Tuy nhiên, chỉ riêng sự có mặt của người trẻ không chứng minh phong trào đại diện cho cả một thế hệ. Để đánh giá nhận định đó, người đọc cần bằng chứng về ai tham gia, họ yêu cầu điều gì và thông tin được thu thập ra sao.",
+    "promptVi": "Một số người cho rằng biểu tình công khai là cách hiệu quả để người trẻ tác động tới quyết định. Người khác ủng hộ việc tham gia thông qua các thiết chế chính thức. Thảo luận cả hai quan điểm và nêu ý kiến của bạn."
   }
 ];

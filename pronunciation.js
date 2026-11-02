@@ -32,13 +32,13 @@ window.Pronunciation = (() => {
   }
   const synthesis = window.speechSynthesis;
   const supported = !!synthesis && typeof window.SpeechSynthesisUtterance === 'function';
-  let voices = [], serial = 0, watchdog = null, activeUtterance = null, lastText = '';
+  let voices = [], serial = 0, watchdog = null, startTimer = null, activeUtterance = null, lastText = '';
   const controls = document.getElementById('speech-controls');
   controls.innerHTML = `<div class="speech-intro"><strong>IPA & phát âm</strong><span>IPA Mỹ · Nhấn từ để nghe · ▶ nghe cả cụm/câu</span></div><div class="speech-options"><label for="speech-voice">Giọng đọc</label><select id="speech-voice" aria-label="Chọn giọng đọc tiếng Anh"><option value="">Mặc định tiếng Anh Mỹ</option></select><label for="speech-rate">Tốc độ</label><select id="speech-rate"><option value="0.7">Chậm · 0.7×</option><option value="0.85" selected>Rõ ràng · 0.85×</option><option value="1">Bình thường · 1×</option></select><button id="speech-stop" class="secondary" type="button">Dừng đọc</button></div><p id="speech-status" role="status">${supported?'Chọn một từ tiếng Anh có gạch chấm để nghe.':'Trình duyệt này không hỗ trợ đọc thành tiếng. Bạn vẫn có thể xem IPA và mở từ điển.'}</p>`;
   const popup = document.createElement('section');
   popup.className = 'speech-popover'; popup.hidden = true;
   popup.setAttribute('aria-label','Từ và phiên âm đang nghe');
-  popup.innerHTML = '<button type="button" id="speech-close" aria-label="Đóng phần phát âm">×</button><span class="label">PRONUNCIATION · IPA MỸ</span><h3 id="spoken-word" lang="en"></h3><p id="spoken-ipa" lang="en"></p><p id="spoken-note"></p><div class="row"><button type="button" id="speech-replay">Nghe lại ▶</button><a id="speech-dictionary" target="_blank" rel="noopener noreferrer">Tra từ điển ↗</a></div>';
+  popup.innerHTML = '<button type="button" id="speech-close" aria-label="Đóng phần phát âm">×</button><span class="label">PRONUNCIATION · IPA MỸ</span><h3 id="spoken-word" lang="en"></h3><p id="spoken-ipa" lang="en"></p><p id="spoken-note"></p><div class="row"><button type="button" id="speech-replay">Đọc lại từ đầu ▶</button><a id="speech-dictionary" target="_blank" rel="noopener noreferrer">Tra từ điển ↗</a></div>';
   document.body.append(popup);
   const status = message => {document.getElementById('speech-status').textContent = message;};
   function loadVoices() {
@@ -56,7 +56,7 @@ window.Pronunciation = (() => {
     }
   }
   function stop(message='Đã dừng phát âm.') {
-    serial++; clearTimeout(watchdog); activeUtterance=null;
+    serial++; clearTimeout(watchdog); clearTimeout(startTimer); activeUtterance=null;
     if(supported)synthesis.cancel();
     status(message);
   }
@@ -72,26 +72,47 @@ window.Pronunciation = (() => {
     if(!supported){status('Không hỗ trợ giọng đọc trên trình duyệt này. Bạn có thể xem IPA hoặc nhấn Tra từ điển.');return;}
     const request=++serial;
     clearTimeout(watchdog);
-    synthesis.cancel();
+    clearTimeout(startTimer);
+    const hadSpeech=!!activeUtterance||synthesis.speaking||synthesis.pending;
+    if(hadSpeech)synthesis.cancel();
     const utterance=new window.SpeechSynthesisUtterance(spoken);
     activeUtterance=utterance; // Retain the utterance until its end/error event.
-    const choice=document.getElementById('speech-voice').value;
-    if(choice!==''&&voices[Number(choice)])utterance.voice=voices[Number(choice)];
-    utterance.lang=utterance.voice?.lang||'en-US';
-    utterance.rate=Number(document.getElementById('speech-rate').value);
     utterance.pitch=1;
     const isCurrent=()=>request===serial;
     status('Đang chuẩn bị giọng đọc: '+spoken);
     utterance.onstart=()=>{if(isCurrent()){clearTimeout(watchdog);status('Đang đọc: '+spoken);}};
     utterance.onend=()=>{if(isCurrent()){clearTimeout(watchdog);activeUtterance=null;status('Đã đọc: '+spoken);}};
     utterance.onerror=event=>{if(!isCurrent())return;clearTimeout(watchdog);activeUtterance=null;if(['canceled','interrupted'].includes(event.error))return;status('Chưa phát được âm thanh. Thử chọn giọng tiếng Anh khác, kiểm tra âm lượng hoặc mở Tra từ điển.');};
-    try {
-      watchdog=setTimeout(()=>{if(!isCurrent())return;stop('Chưa khởi động được giọng đọc. Thử giọng tiếng Anh khác hoặc mở Tra từ điển.');},8000);
-      synthesis.speak(utterance);
-    } catch(error) {
-      clearTimeout(watchdog);activeUtterance=null;
-      status('Trình duyệt chưa phát được âm thanh. Hãy chọn giọng khác hoặc mở Tra từ điển.');
+    let attempts=0;
+    function begin() {
+      if(!isCurrent())return;
+      loadVoices();
+      // Let cancellation finish and asynchronous voice discovery settle before a new start.
+      if((synthesis.speaking||synthesis.pending||!voices.length)&&attempts<5){
+        attempts++;
+        startTimer=setTimeout(begin,120);
+        return;
+      }
+      if(synthesis.speaking||synthesis.pending){
+        activeUtterance=null;
+        status('Giọng đọc trước chưa dừng hẳn. Hãy nhấn Dừng đọc rồi thử lại từ đầu.');
+        return;
+      }
+      const choice=document.getElementById('speech-voice').value;
+      if(choice!==''&&voices[Number(choice)])utterance.voice=voices[Number(choice)];
+      utterance.lang=utterance.voice?.lang||'en-US';
+      utterance.rate=Number(document.getElementById('speech-rate').value);
+      try {
+        if(synthesis.paused)synthesis.resume();
+        watchdog=setTimeout(()=>{if(!isCurrent())return;stop('Chưa khởi động được giọng đọc. Thử giọng tiếng Anh khác hoặc mở Tra từ điển.');},8000);
+        // Preserve the complete original string, including its first word.
+        synthesis.speak(utterance);
+      } catch(error) {
+        clearTimeout(watchdog);activeUtterance=null;
+        status('Trình duyệt chưa phát được âm thanh. Hãy chọn giọng khác hoặc mở Tra từ điển.');
+      }
     }
+    startTimer=setTimeout(begin,hadSpeech?240:180);
   }
   document.addEventListener('click',event=>{
     const target=event.target.closest?.('[data-say]');

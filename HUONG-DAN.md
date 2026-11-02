@@ -91,3 +91,9 @@ Kiểm tra mới: mức phủ IPA cho toàn bộ headword và ví dụ trong 90 
 Có 163 câu ví dụ và bản dịch Việt đi cùng từng ô từ (gồm các nhóm bổ sung của Giáo dục). Các câu dùng đúng mục từ và loại từ đang học; bản dịch nhằm giải thích nghĩa trong ngữ cảnh. Những câu đã có phù hợp ở nhóm Education được giữ lại. Ví dụ và bản dịch là nội dung tự biên soạn, không phải dữ kiện từ tin thời sự.
 
 Từ trọng tâm được in đậm trong câu. Cả mục từ và những từ trong câu đều có thể nhấn để xem IPA/nghe; nút ▶ đọc cả câu. Ba ô danh–động–tính của một nhóm nằm cùng hàng trên màn hình rộng và cùng nhóm xếp dọc trên điện thoại.
+
+## Rà soát bản dịch và lượt đọc
+
+Đã bổ sung dịch câu ví dụ và nghĩa phần kết hợp từ cho đủ 90 thẻ. Phần cấu trúc có bản dịch 12 ví dụ; phần đọc và viết có bản dịch đầy đủ 15 đoạn mẫu và đề theo chủ đề, cùng đề luyện Task 1/2. Bản dịch được biên soạn theo ngữ cảnh, không phải số liệu mới từ nguồn tin bên ngoài.
+
+Đã thêm khoảng đệm giữa hủy và bắt đầu phát âm, chờ giọng sẵn sàng, bỏ các yêu cầu cũ khi nhấn nhanh và hủy yêu cầu đang chờ khi nhấn Dừng. Kiểm tra đã duyệt đủ 90 thẻ bằng nút Tiếp và mở nghĩa, xác nhận bản dịch hiện trên từng thẻ; kiểm tra chuỗi đọc bắt đầu nguyên vẹn bằng “equal”, việc chuyển từ lượt đang đọc, nhấn liên tục và dừng trước khi phát. Đây là kiểm tra điều khiển/chuỗi văn bản; chưa xác minh âm thanh thực tế trên thiết bị người dùng.
