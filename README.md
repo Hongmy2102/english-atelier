@@ -18,7 +18,7 @@ python -m http.server 8765 --bind 127.0.0.1
 
 ## GitHub Pages
 
-Repository dự kiến: **Hongmy2102/english-atelier**. Nhánh chính: **main**. Phục vụ từ thư mục gốc **/ (root)**, có `.nojekyll`.
+Repository: **[Hongmy2102/english-atelier](https://github.com/Hongmy2102/english-atelier)**. Mã nguồn đã được đẩy lên GitHub. Nhánh chính: **main**. Phục vụ từ thư mục gốc **/ (root)**, có `.nojekyll`.
 
 Đường dẫn website dự kiến sau khi GitHub Pages được bật và triển khai thành công: `https://hongmy2102.github.io/english-atelier/`. Đây chưa phải xác nhận rằng website đã được xuất bản.
 
