@@ -75,3 +75,19 @@ Link chia sẻ OneDrive không phải dịch vụ host website đầy đủ. Cá
 - Các kiểm tra dùng ghi chú mẫu trên hồ sơ trình duyệt thử; gói phân phối không kèm tiến độ giả.
 
 Kiểm tra qua HTTP không chứng minh mọi trình duyệt sẽ cho phép file:// lưu dữ liệu. Chưa kiểm tra publication, host Internet, OneDrive, toàn bộ nội dung sách, độ chính xác chấm thi hoặc cập nhật bài báo tự động.
+
+## Cập nhật IPA và phát âm
+
+IPA Mỹ được lưu sẵn trong `phonetics.js`. Nguồn, giấy phép và cách biên tập xem `THIRD_PARTY_NOTICES.md`. Không có yêu cầu gọi API từ điển để hiển thị IPA. Nút từ, nút đọc cụm/câu, chọn giọng và tốc độ nằm trong `pronunciation.js`. Những từ trong câu ví dụ có thể nhấn để mở IPA và nghe.
+
+Âm thanh là giọng tổng hợp của trình duyệt/thiết bị, không phải file ghi âm từ điển. Các giọng đọc có thể không sẵn trên một số trình duyệt hoặc cần kết nối mạng. Khi không có hỗ trợ hoặc phát âm thất bại, giao diện báo rõ và cho mở từ điển. Phiên âm của cụm là các dạng từ điển ghép lại; âm yếu và nối âm khi nghe có thể khác.
+
+Chủ đề Giáo dục hiện có 14 nhóm từ trong mindmap, gồm các từ từ phần collocations. Những ô — không có dạng từ thông dụng trong nhóm; không tạo động từ giả để điền đủ ba cột.
+
+Kiểm tra mới: mức phủ IPA cho toàn bộ headword và ví dụ trong 90 thẻ, mọi mục từ trong các nhóm mindmap; điều khiển giọng/tốc độ và thao tác nhấn từ/cụm bằng API trình duyệt giả lập, đường xử lý lỗi/không hỗ trợ, layout điện thoại. Kiểm tra điều khiển phát âm không thay thế việc nghe thử trên loa và giọng đọc thực tế của thiết bị người dùng.
+
+## Ví dụ ngay trong mindmap
+
+Có 163 câu ví dụ và bản dịch Việt đi cùng từng ô từ (gồm các nhóm bổ sung của Giáo dục). Các câu dùng đúng mục từ và loại từ đang học; bản dịch nhằm giải thích nghĩa trong ngữ cảnh. Những câu đã có phù hợp ở nhóm Education được giữ lại. Ví dụ và bản dịch là nội dung tự biên soạn, không phải dữ kiện từ tin thời sự.
+
+Từ trọng tâm được in đậm trong câu. Cả mục từ và những từ trong câu đều có thể nhấn để xem IPA/nghe; nút ▶ đọc cả câu. Ba ô danh–động–tính của một nhóm nằm cùng hàng trên màn hình rộng và cùng nhóm xếp dọc trên điện thoại.
